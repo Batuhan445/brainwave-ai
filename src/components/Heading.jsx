@@ -1,8 +1,8 @@
-import React from 'react'
-
-const Heading = () => {
+const Heading = ({className, title}) => {
   return (
-    <div>Heading</div>
+    <div className={`${className} max-w-[50rem] mb-12 lg:mb20 mx-auto`}>
+      {title && <h2 className="h2">{title}</h2>}
+    </div>
   )
 }
 
